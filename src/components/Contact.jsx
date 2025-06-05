@@ -94,28 +94,28 @@ export default function Contact() {
           )}
         </motion.form>
 
-        <div className="mt-10 text-center space-x-6 text-2xl">
+        {/* <div className="mt-10 text-center space-x-6 text-2xl">
           <a
-            href="https://github.com/tuusuario"
+            href="https://github.com/adecespedes"
             target="_blank"
             className="text-gray-300 hover:text-white"
           >
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/tuusuario"
+            href="https://linkedin.com/in/adecespedes90"
             target="_blank"
             className="text-gray-300 hover:text-white"
           >
             <FaLinkedin />
           </a>
           <a
-            href="mailto:tucorreo@example.com"
+            href="mailto:adecespedes1990@gmail.com"
             className="text-gray-300 hover:text-white"
           >
             <FaEnvelope />
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -5,12 +5,12 @@ export default function Footer() {
     <footer className="bg-gray-950 text-gray-400 py-8 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm text-center md:text-left">
-          © {new Date().getFullYear()} TuNombre. Todos los derechos reservados.
+          © {new Date().getFullYear()}. Todos los derechos reservados.
         </p>
 
         <div className="flex space-x-5 text-xl">
           <a
-            href="https://github.com/tuusuario"
+            href="https://github.com/adecespedes"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
@@ -18,7 +18,7 @@ export default function Footer() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/tuusuario"
+            href="https://linkedin.com/in/adecespedes90"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
@@ -26,7 +26,7 @@ export default function Footer() {
             <FaLinkedin />
           </a>
           <a
-            href="mailto:tucorreo@example.com"
+            href="mailto:adecespedes1990@gmail.com"
             className="hover:text-white transition"
           >
             <FaEnvelope />

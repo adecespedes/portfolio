@@ -1,40 +1,57 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import dashImg from "../assets/projects/dashboard.png";
-import tareasImg from "../assets/projects/tareas.png";
-import landingImg from "../assets/projects/landing.png";
+import ficha from "../assets/projects/ficha.png";
+import movil from "../assets/projects/movil.jpg";
+import shopping from "../assets/projects/shopping.png";
+import buscador from "../assets/projects/buscador.png";
+import users from "../assets/projects/users.png";
+import { i } from "framer-motion/client";
 
 const allProjects = [
   {
-    title: "Dashboard Admin",
-    description:
-      "Panel administrativo moderno con autenticación y gráficos interactivos.",
-    tech: ["React", "Chart.js", "Firebase"],
-    link: "https://github.com/usuario/dashboard-admin",
-    image: dashImg,
+    title: "Fichas de costos",
+    description: "Generador de fichas de costos en Excel.",
+    tech: ["React", "Material-UI", "ExcelJS", "Electron"],
+    link: "https://github.com/adecespedes/ficha-costo-excel.git",
+    image: ficha,
   },
   {
-    title: "App Móvil de Tareas",
+    title: "TransferMóvil Contabilidad",
     description:
-      "Aplicación móvil con React Native para gestión de tareas offline.",
-    tech: ["React Native", "SQLite"],
-    link: "https://github.com/usuario/app-tareas",
-    image: tareasImg,
+      "Aplicación móvil para la gestión contable a traves de mensajes de TransferMóvil.",
+    tech: ["React Native", "Expo", "Expo SQLite"],
+    link: "https://github.com/adecespedes/transfermovil-contabilidad.git",
+    image: movil,
   },
   {
-    title: "Landing Page Freelance",
+    title: "Shopping Cart",
     description:
-      "Landing page animada responsiva para un cliente del sector salud.",
-    tech: ["Vue.js", "Tailwind CSS"],
-    link: "https://github.com/usuario/landing-salud",
-    image: landingImg,
+      "Aplicación de carrito de compras con funcionalidades de agregar, eliminar y actualizar productos.",
+    tech: ["React"],
+    link: "https://github.com/adecespedes/shopping-cart.git",
+    image: shopping,
+  },
+  {
+    title: "Buscador de Películas",
+    description:
+      "Aplicación para buscar y filtrar películas utilizando una API.",
+    tech: ["React"],
+    link: "https://github.com/adecespedes/react-buscador-peliculas.git",
+    image: buscador,
+  },
+  {
+    title: "Registro de usuarios",
+    description: "Gestión de usuarios con registro.",
+    tech: ["Vue.js", "Axios"],
+    link: "https://github.com/adecespedes/Users.git",
+    image: users,
   },
   // Puedes seguir agregando más proyectos aquí...
 ];
 
 export default function Projects() {
   const [showAll, setShowAll] = useState(false);
-  const displayedProjects = showAll ? allProjects : allProjects.slice(0, 2);
+  const displayedProjects = showAll ? allProjects : allProjects.slice(0, 3);
 
   return (
     <section id="proyectos" className="py-20 px-4 bg-gray-100 text-gray-900">
@@ -91,7 +108,7 @@ export default function Projects() {
           ))}
         </div>
 
-        {allProjects.length > 2 && (
+        {allProjects.length > 3 && (
           <div className="text-center">
             <button
               onClick={() => setShowAll(!showAll)}

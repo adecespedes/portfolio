@@ -20,9 +20,9 @@ export default function Hero() {
 
         <TypeAnimation
           sequence={[
-            "Ingeniero de Software",
+            "Desarrollador de Software",
             2000,
-            "Desarrollador Full Stack",
+            "Especialista en Frontend",
             2000,
             "Apasionado por la Web",
             2000,
@@ -34,7 +34,7 @@ export default function Hero() {
         />
 
         <p className="text-base md:text-lg mb-4 text-gray-300">
-          Stack: React.js · Node.js · PostgreSQL · Tailwind CSS
+          Stack: Vue.js · React.js · React Native · PostgreSQL
         </p>
 
         <div className="flex justify-center gap-4 mb-6">
@@ -55,7 +55,7 @@ export default function Hero() {
 
         <div className="flex justify-center gap-6 text-2xl">
           <a
-            href="https://github.com/tu-usuario"
+            href="https://github.com/adecespedes"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-400"
@@ -63,7 +63,7 @@ export default function Hero() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/tu-usuario"
+            href="https://linkedin.com/in/adecespedes90"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-400"
