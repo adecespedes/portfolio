@@ -5,7 +5,7 @@ import movil from "../assets/projects/movil.jpg";
 import shopping from "../assets/projects/shopping.png";
 import buscador from "../assets/projects/buscador.png";
 import users from "../assets/projects/users.png";
-import { i } from "framer-motion/client";
+import mala_pinta from "../assets/projects/mala_pinta.png";
 
 const allProjects = [
   {
@@ -45,6 +45,14 @@ const allProjects = [
     tech: ["Vue.js", "Axios"],
     link: "https://github.com/adecespedes/Users.git",
     image: users,
+  },
+  {
+    title: "Registro de ventas",
+    description:
+      "Gestión para el registro de productos, pacas y ventas. Dashboard con análisis importantes.",
+    tech: ["Vue.js", "Axios", "Quasar", "Chartjs", "Vue Chart"],
+    link: "https://github.com/adecespedes/ventas-mala-pinta.git",
+    image: mala_pinta,
   },
   // Puedes seguir agregando más proyectos aquí...
 ];
